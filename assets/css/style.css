@@ -16,6 +16,7 @@ background-image: url("../images/blue.jpg");
 background-size: cover;
 }
 
+/* header section */
 header {
   padding: 25px;
   background-color: var(--secondary-color);
@@ -63,6 +64,7 @@ section {
   padding: 100px;
 }
 
+/* Jumbotron section */
 .jumbotron {
   background-image: url("../images/mountain.jpg");
   background-size: cover;
@@ -77,6 +79,7 @@ section {
 
 }
 
+/* About Me section */
 .about-me, .projects {
   width: 100%;
   display: flex;
@@ -84,7 +87,7 @@ section {
   justify-content: space-evenly;
 }
 
-.about-me h2, .projects h2 {
+.about-me h2, .projects h2, .contact-me h2 {
   text-decoration: underline ;
   align-content: center; 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -108,6 +111,7 @@ section {
 
 }
 
+/* Project section */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -195,7 +199,7 @@ background-size: cover;
 }
 
 .project-two-title, .project-three-title, .project-four-title, .project-five-title {
-  border: 6px solid color: black;
+  border: 6px solid color; black;
   background-color: black;
   width: 40%;
   height: 50px;
@@ -205,4 +209,82 @@ background-size: cover;
   text-align: center;
   font-size: 20px;
   color: white;
+}
+
+/*Contact Me section */
+.contact-me nav {
+  margin: 17px 0;
+}
+
+.contact-me nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-around;
+}
+
+
+.contact-me nav ul li a {
+  padding: 12px 60px;
+  font-style: oblique;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  
+}
+.contact-me nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  .jumbotron h2 {
+    justify-content: center
+  }
+
+  .about-me-data p {
+    width: 100%;
+  }
+
+  .contact-me h2 {
+    text-align: center;
+  }
+
+  .contact-me ul li a {
+    display: flex;
+  }
+
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+
+
+/*MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+
+  .projects h3 {
+    font-size: 15px;
+  }
 }
